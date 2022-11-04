@@ -1,9 +1,11 @@
 <mat-toolbar color="primary">
-  Angular Firebase
+  <a style="text-decoration: none; color: #fff" routerLink='home'>Angular Firebase</a>
   <button mat-button>
-    <mat-icon>login</mat-icon>
+    <mat-icon routerLink='login'>login</mat-icon>
     Login
   </button>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
