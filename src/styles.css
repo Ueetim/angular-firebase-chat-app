@@ -12,3 +12,30 @@
 .material-icons{
   font-family: 'Material Icons' !important;
 }
+
+.form-container {
+  background-image: url('assets/images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffffd5;
+  background-blend-mode: overlay;
+  text-align: center;
+  height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container > div {
+  width: 100%;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
