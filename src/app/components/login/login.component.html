@@ -1,7 +1,7 @@
 <div class="form-container">
   <div>
-    <h1>Login</h1>
-    <form [formGroup]="loginForm">
+    <h1>LOGIN</h1>
+    <form [formGroup]="loginForm" (ngSubmit)='submit()'>
       <mat-form-field>
         <input matInput placeholder="Email address" formControlName="email">
         <mat-error *ngIf="email?.errors?.['required']">Email is required</mat-error>

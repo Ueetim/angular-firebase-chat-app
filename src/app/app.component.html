@@ -1,9 +1,22 @@
 <mat-toolbar color="primary">
-  <a style="text-decoration: none; color: #fff" routerLink='home'>Angular Firebase</a>
-  <button routerLink='/login' mat-button>
-    <mat-icon>login</mat-icon>
-    Login
-  </button>
+  <a style="text-decoration: none; color: #fff" routerLink=''>
+    Angular Firebase
+  </a>
+
+  <ng-container *ngIf="authService.currentUser$ | async as user; else $any(loginButton)">
+    <button (click)='logout()' mat-button>
+      <mat-icon>logout</mat-icon>
+      Logout
+    </button>
+  </ng-container>
+
+  <ng-template #loginButton>
+    <button routerLink='/login' mat-button>
+      <mat-icon>login</mat-icon>
+      Login
+    </button>
+  </ng-template>
+
 </mat-toolbar>
 
 <div class="content">
