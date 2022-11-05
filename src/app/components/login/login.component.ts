@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
         this.toast.observe({
           success: "Logged in successfully!",
           loading: "Logging in...",
-          error: "Oops! An error occurred. Please check login details and try again"
+          error: "Oops! An error occurred. Please confirm login details and try again"
         })
       ).subscribe(() => {
         this.router.navigate(['/home']);
