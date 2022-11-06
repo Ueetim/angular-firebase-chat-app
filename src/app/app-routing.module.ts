@@ -12,7 +12,7 @@ const redirectToHome = () => redirectLoggedInTo(['home']);
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: LandingComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent, ...canActivate(redirectToHome) },
   { path: 'signup', component: SignupComponent, ...canActivate(redirectToHome) },
   { path: 'home', component: HomeComponent, ...canActivate(redirectToLogin) }
 ];

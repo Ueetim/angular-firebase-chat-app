@@ -1,6 +1,7 @@
 <div class="form-container">
   <div>
-    <h1>LOGIN</h1>
+    <h1>Welcome Back!</h1>
+    <p>Welcome back. Please enter your login credentials</p>
     <form [formGroup]="loginForm" (ngSubmit)='submit()'>
       <mat-form-field>
         <input matInput placeholder="Email address" formControlName="email">
@@ -11,13 +12,16 @@
         <input matInput type="password" placeholder="Password" formControlName="password">
         <mat-error *ngIf="password?.errors?.['required']">Password is required</mat-error>
       </mat-form-field>
-      <button style="margin-top:10px" mat-raised-button color="primary" type="submit">
+
+      <a href="#" style="text-decoration: none; color: #673ab7; text-align: left;">Forgot password?</a>
+
+      <button mat-raised-button color="primary" type="submit">
         Login
       </button>
     </form>
 
     <p>Don't have an account?
-      <a routerLink="/signup">Sign Up!</a>
+      <a routerLink="/signup" style="text-decoration: none; color: #673ab7;">Sign Up!</a>
     </p>
   </div>
 </div>

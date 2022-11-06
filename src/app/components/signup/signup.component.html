@@ -1,6 +1,7 @@
 <div class="form-container">
   <div>
     <h1>SIGN UP</h1>
+    <p>Please fill the form to create a new account</p>
     <form [formGroup]="signUpForm" (ngSubmit)='submit()'>
       <mat-form-field>
         <input matInput placeholder="Name" formControlName="name">
@@ -31,7 +32,7 @@
     </form>
 
     <p>Already have an account?
-      <a routerLink="/login">Login!</a>
+      <a routerLink="/login" style="text-decoration: none; color: #673ab7;">Login!</a>
     </p>
   </div>
 </div>

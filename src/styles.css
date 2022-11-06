@@ -20,11 +20,24 @@
   background-color: #0000007c;
   background-blend-mode: overlay;
   text-align: center;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 64px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
+}
+
+.form-container h1 {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.form-container > div > p {
+  color: gray;
+  font-size: 13px;
+  margin: -10px 0 20px 0;
 }
 
 .form-container > div {
@@ -34,6 +47,7 @@
   background-color: #fff;
   padding: 30px;
   /* box-shadow: 2px 2px 5px #00000054; */
+  /* margin: 0 20px; */
 }
 
 .form-container form {
@@ -45,5 +59,9 @@
   margin-bottom: 10px;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.form-container button {
+  margin: 10px 0;
+}
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
