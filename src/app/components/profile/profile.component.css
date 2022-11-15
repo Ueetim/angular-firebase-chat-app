@@ -1,0 +1,16 @@
+.profile-image > img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-image {
+  position: relative;
+  width: max-content;
+}
+
+.profile-image > button {
+  position: absolute;
+  bottom: 20px;
+  right: 20%;
+}
