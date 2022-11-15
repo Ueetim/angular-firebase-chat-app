@@ -8,5 +8,5 @@
       <mat-icon>edit</mat-icon>
     </button>
   </div>
-  <input #inputField type="file" hidden>
+  <input #inputField type="file" hidden (change)="uploadImage($event, user)">
 </div>
