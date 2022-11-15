@@ -2,6 +2,12 @@ mat-toolbar {
   justify-content: space-between;
 }
 
+.profile-image-toolbar {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* .content {
   padding: 32px;
 } */
