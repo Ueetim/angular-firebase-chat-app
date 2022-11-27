@@ -7,10 +7,24 @@
 .profile-image {
   position: relative;
   width: max-content;
+  margin: auto;
 }
 
 .profile-image > button {
   position: absolute;
-  bottom: 20px;
-  right: 20%;
+  bottom: 0px;
+  right: 0;
+}
+
+.form-container > div {
+  max-width: 400px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.row > mat-form-field {
+  width: calc(50% - 8px);
 }
