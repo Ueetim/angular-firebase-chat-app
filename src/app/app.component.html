@@ -3,7 +3,7 @@
     Angular Firebase
   </a>
 
-  <ng-container *ngIf="authService.currentUser$ | async as user; else $any(loginButton)">
+  <ng-container *ngIf="user$ | async as user; else $any(loginButton)">
     <button mat-button [matMenuTriggerFor]="userMenu">
       <!-- <mat-icon>account_circle</mat-icon> -->
       <img class="profile-image-toolbar" width="30" height="30" [src]="user.photoURL ?? 'assets/images/profile-image.jpeg'">
